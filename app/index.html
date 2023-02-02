@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperture Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" href=""
+          ><svg width="128" height="31">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="button-menu" aria-expanded="false" data-menu-button>
+          <svg class="button-menu__burger" width="24" height="24" aria-label="Mobile menu switch">
+            <use class="button-menu__icon" href="./images/icons.svg#icon-ic-menu"></use>
+            <use class="button-menu__cross" href="./images/icons.svg#icon-ic-cross"></use>
+          </svg>
+        </button>
+
+        <div class="header__menu" data-menu>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item"><a class="header__link" href="">Featured images</a></li>
+              <li class="header__item"><a class="header__link" href="">Gear cage</a></li>
+              <li class="header__item"><a class="header__link" href="">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button type="button" class="header__button">Get template</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h3>Photographer & Filmmaker</h3>
+          <h1>Aperture Studios</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+            commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+            imperdiet. Nunc ut sem vitae risus tristique posuere.
+          </p>
+
+          <ul>
+            <li>
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-shutter"></use>
+              </svg>
+              <p>1/2000s</p>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-aperture"></use>
+              </svg>
+              <p>f/11</p>
+            </li>
+            <li>
+              <svg width="32" height="16">
+                <use href="./images/icons.svg#icon-iso"></use>
+              </svg>
+              <p>100</p>
+            </li>
+            <li>
+              <svg width="10" height="16">
+                <use href="./images/icons.svg#icon-location"></use>
+              </svg>
+              <p>Iceland</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.min.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

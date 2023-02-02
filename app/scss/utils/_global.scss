@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0 auto;
+
+  background-color: $black-color;
+  color: $primary-text-color;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  max-width: 1230px;
+  width: 100%;
+}
