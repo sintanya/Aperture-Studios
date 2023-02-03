@@ -1,0 +1,26 @@
+.photo-settings {
+  position: absolute;
+  bottom: 6%;
+  right: 3%;
+
+  display: flex;
+
+  z-index: 2;
+
+  &__item {
+    display: flex;
+
+    & + & {
+      margin-left: 16px;
+    }
+  }
+
+  &__icon {
+    margin-right: 6px;
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 1;
+  }
+}

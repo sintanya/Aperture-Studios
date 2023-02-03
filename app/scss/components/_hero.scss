@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+
+  &__img-box {
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%);
+    }
+  }
+  &__image {
+    margin-top: -5px;
+  }
+  &__content {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    z-index: 3;
+
+    transform: translateX(-50%);
+
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 10px 10px;
+
+    text-align: center;
+  }
+
+  &__subtitle {
+    @extend %headline;
+    margin-bottom: 2px;
+
+    color: $secondary-text-color;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    font-size: 54px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    @extend %text;
+  }
+}

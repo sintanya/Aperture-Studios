@@ -42,42 +42,53 @@
         </div>
       </div>
     </header>
-    <main>
-      <section>
-        <div>
-          <h3>Photographer & Filmmaker</h3>
-          <h1>Aperture Studios</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-            commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-            imperdiet. Nunc ut sem vitae risus tristique posuere.
-          </p>
 
-          <ul>
-            <li>
-              <svg width="16" height="16">
+    <main>
+      <section class="hero">
+        <div class="hero__img-box">
+          <img
+            class="hero__image"
+            src="./images/heroimg.jpg"
+            alt="landscape photography"
+            width="100%"
+          />
+        </div>
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h3 class="hero__subtitle">Photographer & Filmmaker</h3>
+            <h1 class="hero__title">Aperture Studios</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+              eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
+              nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id
+              rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+
+          <ul class="hero__list photo-settings">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-shutter"></use>
               </svg>
-              <p>1/2000s</p>
+              <p class="photo-settings__desc">1/2000s</p>
             </li>
-            <li>
-              <svg width="16" height="16">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-aperture"></use>
               </svg>
-              <p>f/11</p>
+              <p class="photo-settings__desc">f/11</p>
             </li>
-            <li>
-              <svg width="32" height="16">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="32" height="16">
                 <use href="./images/icons.svg#icon-iso"></use>
               </svg>
-              <p>100</p>
+              <p class="photo-settings__desc">100</p>
             </li>
-            <li>
-              <svg width="10" height="16">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-location"></use>
               </svg>
-              <p>Iceland</p>
+              <p class="photo-settings__desc">Iceland</p>
             </li>
           </ul>
         </div>
