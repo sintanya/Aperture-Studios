@@ -1,0 +1,31 @@
+.customers {
+  padding-top: 115px;
+  padding-bottom: 93px;
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.25;
+
+    text-align: center;
+
+    color: $secondary-text-color;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 42px 63px;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 109px;
+    }
+  }
+}
