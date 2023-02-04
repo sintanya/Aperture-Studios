@@ -1,0 +1,41 @@
+.tools {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 516px;
+    width: 100%;
+    margin-top: 173px;
+    margin-left: 100px;
+  }
+
+  &__subtitle {
+    @extend %headline;
+    margin-bottom: 6px;
+
+    color: $secondary-text-color;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  &__text {
+    @extend %text;
+    margin-bottom: 20px;
+  }
+
+  &__img-box {
+    position: relative;
+    width: calc(100% / 2);
+  }
+
+  &__list {
+    bottom: 7.4%;
+    right: 5.8%;
+  }
+}
