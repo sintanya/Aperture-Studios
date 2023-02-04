@@ -1,0 +1,29 @@
+.communication {
+  padding-top: 113px;
+  padding-bottom: 108px;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    @extend %section-title;
+
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    margin-bottom: 21px;
+
+    font-size: 24px;
+    line-height: 1.25;
+
+    text-align: center;
+
+    color: $secondary-text-color;
+  }
+}
