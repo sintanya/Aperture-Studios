@@ -1,0 +1,18 @@
+.section-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 15px 5px 4px;
+
+  font-size: 15px;
+  line-height: 1.33;
+
+  letter-spacing: 0.4px;
+
+  color: $black-color;
+  background-color: $primary-text-color;
+  border-radius: 14px;
+
+  &__icon {
+    margin-right: 6px;
+  }
+}

@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-
   &__img-box {
     position: relative;
     overflow: hidden;
@@ -49,5 +48,10 @@
 
   &__text {
     @extend %text;
+  }
+
+  &__list {
+    bottom: 6%;
+    right: 3%;
   }
 }

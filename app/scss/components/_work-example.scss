@@ -1,0 +1,27 @@
+.work-example {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 43.4%;
+    right: 4.3%;
+
+    max-width: 298px;
+    width: 100%;
+
+    z-index: 2;
+  }
+
+  &__subtitle {
+    @extend %headline;
+  }
+
+  &__text {
+    @extend %text;
+  }
+
+  &__list {
+    bottom: 6.9%;
+    right: 3%;
+  }
+}
