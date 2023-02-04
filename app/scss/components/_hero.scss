@@ -3,6 +3,7 @@
   &__img-box {
     position: relative;
     overflow: hidden;
+
     &::after {
       content: '';
       position: absolute;
