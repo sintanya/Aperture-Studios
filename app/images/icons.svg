@@ -1,13 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-ic-cross" viewBox="0 0 32 32">
-<path fill="#000000" style="fill: var(--color1, #000000)" d="M28.513 5.925l-22.627 22.627-1.886-1.886 22.627-22.627 1.886 1.886z"></path>
-<path fill="#000000" style="fill: var(--color1, #000000)" d="M26.075 28.513l-22.627-22.627 1.886-1.886 22.627 22.627-1.886 1.886z"></path>
+<path fill="currentColor" style="fill: var(--color1, currentColor)" d="M28.513 5.925l-22.627 22.627-1.886-1.886 22.627-22.627 1.886 1.886z"></path>
+<path fill="currentColor" style="fill: var(--color1, currentColor)" d="M26.075 28.513l-22.627-22.627 1.886-1.886 22.627 22.627-1.886 1.886z"></path>
 </symbol>
 <symbol id="icon-ic-menu" viewBox="0 0 32 32">
-<path fill="#000000" style="fill: var(--color1, #000000)" d="M32 17.333h-32v-2.667h32v2.667z"></path>
-<path fill="#000000" style="fill: var(--color1, #000000)" d="M32 2.667h-32v-2.667h32v2.667z"></path>
-<path fill="#000000" style="fill: var(--color1, #000000)" d="M32 32h-32v-2.667h32v2.667z"></path>
+<path fill="currentColor" style="fill: var(--color1, currentColor)" d="M32 17.333h-32v-2.667h32v2.667z"></path>
+<path fill="currentColor" style="fill: var(--color1, currentColor)" d="M32 2.667h-32v-2.667h32v2.667z"></path>
+<path fill="currentColor" style="fill: var(--color1, currentColor)" d="M32 32h-32v-2.667h32v2.667z"></path>
 </symbol>
 <symbol id="icon-aperture" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M9.278 21.191l14.768 8.581c-2.367 1.422-5.112 2.228-8.047 2.228-2.414 0-4.686-0.521-6.721-1.517v-9.292zM8.095 12.8v17.067c-4.449-2.465-7.526-7.064-8-12.421l8-4.646zM32 15.881v0.142c0 5.404-2.698 10.193-6.816 13.037l-8-4.599 14.816-8.581zM23.906 2.133c4.449 2.465 7.526 7.064 8 12.421l-8 4.646v-17.067zM6.816 2.939l8 4.599-14.816 8.533v-0.047c0-5.452 2.698-10.24 6.816-13.084zM16.001 0c2.414 0 4.686 0.521 6.721 1.517v9.244l-14.768-8.581c2.367-1.375 5.112-2.181 8.047-2.181z"></path>

@@ -10,15 +10,61 @@
 
     & + & {
       margin-left: 16px;
+
+      @media screen and (max-width: $width-tablet) {
+        margin-left: 14px;
+      }
+      @media screen and (max-width: $width-mobile) {
+        margin-left: 8px;
+      }
     }
   }
 
   &__icon {
     margin-right: 6px;
+
+    @media screen and (max-width: $width-tablet) {
+      width: 14px;
+    }
+    @media screen and (max-width: 650px) {
+      width: 12px;
+    }
+    @media screen and (max-width: $width-mobile) {
+      width: 10px;
+      margin-right: 4px;
+    }
+  }
+
+  &__iso-icon {
+    @media screen and (max-width: $width-tablet) {
+      width: 30px;
+    }
+    @media screen and (max-width: 650px) {
+      width: 25px;
+    }
+    @media screen and (max-width: $width-mobile) {
+      width: 22px;
+    }
+  }
+
+  &__location-icon {
+    @media screen and (max-width: $width-tablet) {
+      width: 8px;
+    }
+    @media screen and (max-width: $width-mobile) {
+      width: 7px;
+    }
   }
 
   &__desc {
     font-size: 12px;
     line-height: 1;
+
+    @media screen and (max-width: $width-tablet) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: $width-mobile) {
+      font-size: 8px;
+    }
   }
 }

@@ -4,11 +4,10 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and(max-width: $width-tablet) {
+  @media screen and(max-width: 1000px) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   @media screen and(max-width: $width-mobile) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -80,7 +79,6 @@
 
       font-size: 19px;
     }
-
     @media screen and(max-width: $width-mobile) {
       font-size: 15px;
     }
@@ -137,7 +135,6 @@
 
       font-size: 19px;
     }
-
     @media screen and(max-width: $width-mobile) {
       margin-top: 35px;
 
@@ -148,22 +145,16 @@
 
 .button-menu {
   display: none;
+  color: $primary-text-color;
 
   @media screen and(max-width: $width-tablet) {
     display: inline-block;
-    padding: 3px 15px;
+    padding: 2px 6px;
 
     border: none;
-    border-radius: 11px;
-    background-color: $primary-text-color;
+    background-color: transparent;
 
     cursor: pointer;
-  }
-
-  @media screen and(max-width: $width-mobile) {
-    padding: 4px 12px;
-
-    border-radius: 10px;
   }
 
   &__cross {
