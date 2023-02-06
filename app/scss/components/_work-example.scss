@@ -1,18 +1,39 @@
 .work-example {
   position: relative;
 
+  &__image {
+    @media screen and (max-width: 1200px) {
+      height: 800px;
+      object-fit: cover;
+      object-position: top center;
+    }
+    @media screen and (max-width: $width-tablet) {
+      height: 550px;
+      object-fit: cover;
+      object-position: top center;
+    }
+    @media screen and (max-width: $width-mobile) {
+      height: 500px;
+    }
+  }
+
   &__content {
     position: absolute;
-    top: 43.4%;
-    right: 4.3%;
+    bottom: 259px;
+    right: 62px;
 
     max-width: 298px;
     width: 100%;
 
     z-index: 2;
 
-    &--star {
-      top: 42%;
+    @media screen and (max-width: $width-tablet) {
+      bottom: 290px;
+      max-width: 232px;
+    }
+    @media screen and (max-width: $width-mobile) {
+      bottom: 240px;
+      right: 20px;
     }
   }
 
@@ -25,12 +46,12 @@
   }
 
   &__list {
-    bottom: 6.9%;
-    right: 3%;
+    bottom: 40px;
+    right: 44px;
 
-    &--star {
-      bottom: 6.7%;
-      right: 2.8%;
+    @media screen and (max-width: $width-tablet) {
+      bottom: 22px;
+      right: 24px;
     }
   }
 }
