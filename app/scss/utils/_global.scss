@@ -16,4 +16,12 @@ body {
   padding: 0 16px;
   max-width: 1200px;
   width: 100%;
+
+  @media screen and (max-width: $width-tablet) {
+    max-width: $width-tablet;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+    max-width: $width-mobile;
+  }
 }
