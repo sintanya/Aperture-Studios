@@ -3,6 +3,13 @@
   line-height: 1.05;
 
   text-align: center;
+
+  @media screen and (max-width: $width-tablet) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: $width-mobile) {
+    font-size: 28px;
+  }
 }
 
 %headline {
@@ -10,6 +17,19 @@
   line-height: 1.43;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @media screen and(max-width: 1000px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $width-tablet) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 680px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $width-mobile) {
+    font-size: 11px;
+  }
 }
 
 %text {
@@ -17,4 +37,17 @@
   line-height: 1.43;
 
   color: $secondary-text-color;
+
+  @media screen and(max-width: 1200px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $width-tablet) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 680px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $width-mobile) {
+    font-size: 11px;
+  }
 }

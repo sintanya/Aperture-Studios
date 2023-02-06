@@ -20,12 +20,16 @@
   &__image {
     margin-top: -5px;
 
+    @media screen and (max-width: 1200px) {
+      height: 800px;
+      object-fit: cover;
+      object-position: top center;
+    }
     @media screen and (max-width: $width-tablet) {
       height: 550px;
       object-fit: cover;
       object-position: top center;
     }
-
     @media screen and (max-width: $width-mobile) {
       height: 500px;
     }
@@ -61,13 +65,6 @@
     margin-bottom: 2px;
 
     color: $secondary-text-color;
-
-    @media screen and(max-width: 1000px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: $width-tablet) {
-      font-size: 10px;
-    }
   }
 
   &__title {
@@ -96,13 +93,6 @@
 
   &__text {
     @extend %text;
-
-    @media screen and(max-width: 1000px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: $width-tablet) {
-      font-size: 10px;
-    }
   }
 
   &__list {
