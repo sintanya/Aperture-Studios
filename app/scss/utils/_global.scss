@@ -26,3 +26,33 @@ body {
     max-width: $width-mobile;
   }
 }
+
+.accordion {
+  cursor: pointer;
+  position: relative;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: url('../images/arrow-ac.svg') no-repeat;
+  background-size: cover;
+  display: inline-block;
+
+  color: #777;
+  margin-left: 5px;
+  transform: rotate(180deg);
+  transition: transform 0.1s;
+}
+
+.active:after {
+  transform: rotate(90deg);
+}
