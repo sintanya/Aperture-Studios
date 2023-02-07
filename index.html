@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
@@ -79,13 +80,17 @@
               <p class="photo-settings__desc">f/11</p>
             </li>
             <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="32" height="16">
+              <svg class="photo-settings__icon photo-settings__iso-icon" width="32" height="16">
                 <use href="./images/icons.svg#icon-iso"></use>
               </svg>
               <p class="photo-settings__desc">100</p>
             </li>
             <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="10" height="16">
+              <svg
+                class="photo-settings__icon photo-settings__location-icon"
+                width="10"
+                height="16"
+              >
                 <use href="./images/icons.svg#icon-location"></use>
               </svg>
               <p class="photo-settings__desc">Iceland</p>
@@ -107,81 +112,84 @@
                 alt="product photography"
                 width="100%"
               />
-              <div class="works__content">
-                <h3 class="works__subtitle">Product Photography</h3>
-                <p class="works__desc">
-                  Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur
-                  auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
-                </p>
-                <a class="works__button section-button" href="">
-                  <svg
-                    class="section-button__icon"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2_66)">
-                      <path
-                        d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 11.8055L24.4413 22.2287"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 11.8055H25.6158"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11.1554 16L17.1744 5.57678"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 20.1944L7.55869 9.77124"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 20.1945H6.38423"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M20.8446 16L14.8256 26.4232"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2_66">
-                        <rect width="32" height="32" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
 
-                  Read more</a
-                >
+              <div class="works__content">
+                <div class="works__wrap">
+                  <h3 class="works__subtitle">Product Photography</h3>
+                  <p class="works__desc">
+                    Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur
+                    auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
+                  </p>
+                  <a class="works__button section-button" href="">
+                    <svg
+                      class="section-button__icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2_66)">
+                        <path
+                          d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 11.8055L24.4413 22.2287"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 11.8055H25.6158"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.1554 16L17.1744 5.57678"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 20.1944L7.55869 9.77124"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 20.1945H6.38423"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.8446 16L14.8256 26.4232"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_66">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    Read more</a
+                  >
+                </div>
               </div>
             </li>
 
@@ -192,82 +200,85 @@
                 alt="architecture photography"
                 width="100%"
               />
-              <div class="works__content">
-                <h3 class="works__subtitle">Architecture Photography</h3>
-                <p class="works__desc">
-                  Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas
-                  pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt
-                  aliquet sapien, sit amet rhoncus leo imperdiet nec.
-                </p>
-                <a class="works__button section-button" href="">
-                  <svg
-                    class="section-button__icon"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2_66)">
-                      <path
-                        d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 11.8055L24.4413 22.2287"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 11.8055H25.6158"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11.1554 16L17.1744 5.57678"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 20.1944L7.55869 9.77124"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 20.1945H6.38423"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M20.8446 16L14.8256 26.4232"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2_66">
-                        <rect width="32" height="32" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
 
-                  Read more</a
-                >
+              <div class="works__content">
+                <div class="works__wrap">
+                  <h3 class="works__subtitle">Architecture Photography</h3>
+                  <p class="works__desc">
+                    Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec
+                    egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce
+                    tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.
+                  </p>
+                  <a class="works__button section-button" href="">
+                    <svg
+                      class="section-button__icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2_66)">
+                        <path
+                          d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 11.8055L24.4413 22.2287"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 11.8055H25.6158"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.1554 16L17.1744 5.57678"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 20.1944L7.55869 9.77124"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 20.1945H6.38423"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.8446 16L14.8256 26.4232"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_66">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    Read more</a
+                  >
+                </div>
               </div>
             </li>
 
@@ -278,83 +289,86 @@
                 alt="drone photography"
                 width="100%"
               />
-              <div class="works__content">
-                <h3 class="works__subtitle">Drone Photography</h3>
-                <p class="works__desc">
-                  Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique
-                  sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas
-                  non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
-                  cursus quam.
-                </p>
-                <a class="works__button section-button" href="">
-                  <svg
-                    class="section-button__icon"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2_66)">
-                      <path
-                        d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 11.8055L24.4413 22.2287"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 11.8055H25.6158"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11.1554 16L17.1744 5.57678"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 20.1944L7.55869 9.77124"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 20.1945H6.38423"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M20.8446 16L14.8256 26.4232"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2_66">
-                        <rect width="32" height="32" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
 
-                  Read more</a
-                >
+              <div class="works__content">
+                <div class="works__wrap">
+                  <h3 class="works__subtitle">Drone Photography</h3>
+                  <p class="works__desc">
+                    Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique
+                    sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas
+                    non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
+                    cursus quam.
+                  </p>
+                  <a class="works__button section-button" href="">
+                    <svg
+                      class="section-button__icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2_66)">
+                        <path
+                          d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 11.8055L24.4413 22.2287"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 11.8055H25.6158"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.1554 16L17.1744 5.57678"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 20.1944L7.55869 9.77124"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 20.1945H6.38423"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.8446 16L14.8256 26.4232"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_66">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    Read more</a
+                  >
+                </div>
               </div>
             </li>
 
@@ -366,82 +380,84 @@
                 width="100%"
               />
               <div class="works__content">
-                <h3 class="works__subtitle">Wildlife Photography</h3>
-                <p class="works__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque
-                  aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque
-                  ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna
-                  turpis.
-                </p>
-                <a class="works__button section-button" href="">
-                  <svg
-                    class="section-button__icon"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_2_66)">
-                      <path
-                        d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 11.8055L24.4413 22.2287"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 11.8055H25.6158"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11.1554 16L17.1744 5.57678"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13.5777 20.1944L7.55869 9.77124"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M18.4223 20.1945H6.38423"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M20.8446 16L14.8256 26.4232"
-                        stroke="black"
-                        stroke-width="12.5833"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2_66">
-                        <rect width="32" height="32" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                <div class="works__wrap">
+                  <h3 class="works__subtitle">Wildlife Photography</h3>
+                  <p class="works__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque
+                    aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi
+                    neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit
+                    amet urna turpis.
+                  </p>
+                  <a class="works__button section-button" href="">
+                    <svg
+                      class="section-button__icon"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2_66)">
+                        <path
+                          d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 11.8055L24.4413 22.2287"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 11.8055H25.6158"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.1554 16L17.1744 5.57678"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.5777 20.1944L7.55869 9.77124"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M18.4223 20.1945H6.38423"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.8446 16L14.8256 26.4232"
+                          stroke="black"
+                          stroke-width="12.5833"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2_66">
+                          <rect width="32" height="32" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
 
-                  Read more</a
-                >
+                    Read more</a
+                  >
+                </div>
               </div>
             </li>
           </ul>
@@ -450,7 +466,12 @@
 
       <section class="work-example">
         <div class="work-example__container">
-          <img src="./images/sunset.jpg" alt="sunset at Mount Fuji" width="100%" />
+          <img
+            class="work-example__image"
+            src="./images/sunset.jpg"
+            alt="sunset at Mount Fuji"
+            width="100%"
+          />
           <div class="work-example__content">
             <h3 class="work-example__subtitle">Sunset at Mount Fuji</h3>
             <p class="work-example__text">
@@ -490,14 +511,252 @@
       <section class="tools">
         <div class="tools__container">
           <div class="tools__content">
-            <h3 class="tools__subtitle">The Gear cage</h3>
-            <h2 class="tools__title">The tools that we use.</h2>
-            <p class="tools__text">
-              The say that "no place is boring if you've had a good night's sleep and have a pocket
-              full of unexposed film". While we don't shoot (a lot) of film these days — these are
-              the tools that we actually use everyday to capture the amazing things around us.
+            <div class="tools__wrap">
+              <h3 class="tools__subtitle">The Gear cage</h3>
+              <h2 class="tools__title">The tools that we use.</h2>
+              <p class="tools__text">
+                The say that "no place is boring if you've had a good night's sleep and have a
+                pocket full of unexposed film". While we don't shoot (a lot) of film these days —
+                these are the tools that we actually use everyday to capture the amazing things
+                around us.
+              </p>
+              <a class="tools__button section-button" href="">
+                <svg
+                  class="section-button__icon"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2_66)">
+                    <path
+                      d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.4223 11.8055L24.4413 22.2287"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.5777 11.8055H25.6158"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.1554 16L17.1744 5.57678"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.5777 20.1944L7.55869 9.77124"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.4223 20.1945H6.38423"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.8446 16L14.8256 26.4232"
+                      stroke="black"
+                      stroke-width="12.5833"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2_66">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                Check it out</a
+              >
+            </div>
+          </div>
+          <div class="tools__img-box">
+            <img class="tools__image" src="./images/tools.jpg" alt="" width="100%" />
+            <ul class="tools__list photo-settings">
+              <li class="photo-settings__item">
+                <svg class="photo-settings__icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-shutter"></use>
+                </svg>
+                <p class="photo-settings__desc">0,8''</p>
+              </li>
+              <li class="photo-settings__item">
+                <svg class="photo-settings__icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-aperture"></use>
+                </svg>
+                <p class="photo-settings__desc">f/5,6</p>
+              </li>
+              <li class="photo-settings__item">
+                <svg class="photo-settings__icon" width="32" height="16">
+                  <use href="./images/icons.svg#icon-iso"></use>
+                </svg>
+                <p class="photo-settings__desc">100</p>
+              </li>
+              <li class="photo-settings__item">
+                <svg class="photo-settings__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-location"></use>
+                </svg>
+                <p class="photo-settings__desc">Sweden</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-example">
+        <div class="work-example__container">
+          <img
+            class="work-example__image"
+            src="./images/monstera.jpg"
+            alt="monstera leafs"
+            width="100%"
+          />
+          <div class="work-example__content">
+            <h3 class="work-example__subtitle">Monstera Leafs</h3>
+            <p class="work-example__text">
+              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus
+              orci tincidunt.
             </p>
-            <a class="tools__button section-button" href="">
+          </div>
+          <ul class="work-example__list photo-settings">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-shutter"></use>
+              </svg>
+              <p class="photo-settings__desc">1/400s</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-aperture"></use>
+              </svg>
+              <p class="photo-settings__desc">f/3,5</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="32" height="16">
+                <use href="./images/icons.svg#icon-iso"></use>
+              </svg>
+              <p class="photo-settings__desc">100</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-location"></use>
+              </svg>
+              <p class="photo-settings__desc">Costa Rica</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="customers">
+        <div class="customers__container container">
+          <h2 class="customers__title">Past clients</h2>
+          <p class="customers__text">Trusted by your favourite companies</p>
+
+          <div class="customers__wrapper">
+            <div class="swiper customers__swiper">
+              <ul class="customers__list swiper-wrapper">
+                <li class="customers__item swiper-slide">
+                  <svg class="customers__icon" width="128" height="30">
+                    <use href="./images/icons.svg#icon-clientslogo1"></use>
+                  </svg>
+                </li>
+                <li class="customers__item swiper-slide">
+                  <svg class="customers__icon" width="128" height="78">
+                    <use href="./images/icons.svg#icon-clientslogo2"></use>
+                  </svg>
+                </li>
+                <li class="customers__item swiper-slide">
+                  <svg class="customers__icon" width="128" height="20">
+                    <use href="./images/icons.svg#icon-clientslogo3"></use>
+                  </svg>
+                </li>
+                <li class="customers__item swiper-slide">
+                  <svg class="customers__icon" width="128" height="36">
+                    <use href="./images/icons.svg#icon-clientslogo4"></use>
+                  </svg>
+                </li>
+                <li class="customers__item swiper-slide">
+                  <svg class="customers__icon" width="128" height="32">
+                    <use href="./images/icons.svg#icon-clientslogo5"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-pagination customers__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-example">
+        <div class="work-example__container">
+          <img
+            class="work-example__image"
+            src="./images/star-fall.jpg"
+            alt="star fall in the Himalayas"
+            width="100%"
+          />
+          <div class="work-example__content">
+            <h3 class="work-example__subtitle">Star fall in the Himalayas</h3>
+            <p class="work-example__text">
+              Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
+              congue et, vulputate ut ligula.
+            </p>
+          </div>
+          <ul class="work-example__list photo-settings">
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-shutter"></use>
+              </svg>
+              <p class="photo-settings__desc">6''</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-aperture"></use>
+              </svg>
+              <p class="photo-settings__desc">f/11</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="32" height="16">
+                <use href="./images/icons.svg#icon-iso"></use>
+              </svg>
+              <p class="photo-settings__desc">800</p>
+            </li>
+            <li class="photo-settings__item">
+              <svg class="photo-settings__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-location"></use>
+              </svg>
+              <p class="photo-settings__desc">Nepal</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="communication">
+        <div class="communication__container container">
+          <div class="communication__content">
+            <h2 class="communication__title">Need help with photography or videography?</h2>
+            <p class="communication__text">We're here for you!</p>
+            <button class="tools__button section-button" type="button">
               <svg
                 class="section-button__icon"
                 width="32"
@@ -564,227 +823,9 @@
                 </defs>
               </svg>
 
-              Check it out</a
-            >
+              Get in touch
+            </button>
           </div>
-          <div class="tools__img-box">
-            <img src="./images/tools.jpg" alt="" width="100%" />
-            <ul class="tools__list photo-settings">
-              <li class="photo-settings__item">
-                <svg class="photo-settings__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-shutter"></use>
-                </svg>
-                <p class="photo-settings__desc">0,8''</p>
-              </li>
-              <li class="photo-settings__item">
-                <svg class="photo-settings__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-aperture"></use>
-                </svg>
-                <p class="photo-settings__desc">f/5,6</p>
-              </li>
-              <li class="photo-settings__item">
-                <svg class="photo-settings__icon" width="32" height="16">
-                  <use href="./images/icons.svg#icon-iso"></use>
-                </svg>
-                <p class="photo-settings__desc">100</p>
-              </li>
-              <li class="photo-settings__item">
-                <svg class="photo-settings__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-location"></use>
-                </svg>
-                <p class="photo-settings__desc">Sweden</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="work-example">
-        <div class="work-example__container">
-          <img src="./images/monstera.jpg" alt="monstera leafs" width="100%" />
-          <div class="work-example__content">
-            <h3 class="work-example__subtitle">Monstera Leafs</h3>
-            <p class="work-example__text">
-              Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus
-              orci tincidunt.
-            </p>
-          </div>
-          <ul class="work-example__list photo-settings">
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-shutter"></use>
-              </svg>
-              <p class="photo-settings__desc">1/400s</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-aperture"></use>
-              </svg>
-              <p class="photo-settings__desc">f/3,5</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="32" height="16">
-                <use href="./images/icons.svg#icon-iso"></use>
-              </svg>
-              <p class="photo-settings__desc">100</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-location"></use>
-              </svg>
-              <p class="photo-settings__desc">Costa Rica</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="customers">
-        <div class="customers__container container">
-          <h2 class="customers__title">Past clients</h2>
-          <p class="customers__text">Trusted by your favourite companies</p>
-
-          <ul class="customers__list">
-            <li class="customers__item">
-              <svg class="customers__icon" width="128" height="30">
-                <use href="./images/icons.svg#icon-clientslogo1"></use>
-              </svg>
-            </li>
-            <li class="customers__item">
-              <svg class="customers__icon" width="128" height="78">
-                <use href="./images/icons.svg#icon-clientslogo2"></use>
-              </svg>
-            </li>
-            <li class="customers__item">
-              <svg class="customers__icon" width="128" height="20">
-                <use href="./images/icons.svg#icon-clientslogo3"></use>
-              </svg>
-            </li>
-            <li class="customers__item">
-              <svg class="customers__icon" width="128" height="36">
-                <use href="./images/icons.svg#icon-clientslogo4"></use>
-              </svg>
-            </li>
-            <li class="customers__item">
-              <svg class="customers__icon" width="128" height="32">
-                <use href="./images/icons.svg#icon-clientslogo5"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="work-example">
-        <div class="work-example__container">
-          <img src="./images/star-fall.jpg" alt="star fall in the Himalayas" width="100%" />
-          <div class="work-example__content work-example__content--star">
-            <h3 class="work-example__subtitle">Star fall in the Himalayas</h3>
-            <p class="work-example__text">
-              Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
-              congue et, vulputate ut ligula.
-            </p>
-          </div>
-          <ul class="work-example__list--star photo-settings">
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-shutter"></use>
-              </svg>
-              <p class="photo-settings__desc">6''</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-aperture"></use>
-              </svg>
-              <p class="photo-settings__desc">f/11</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="32" height="16">
-                <use href="./images/icons.svg#icon-iso"></use>
-              </svg>
-              <p class="photo-settings__desc">800</p>
-            </li>
-            <li class="photo-settings__item">
-              <svg class="photo-settings__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-location"></use>
-              </svg>
-              <p class="photo-settings__desc">Nepal</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="communication">
-        <div class="communication__container container">
-          <h2 class="communication__title">Need help with photography or videography?</h2>
-          <p class="communication__text">We're here for you!</p>
-          <button class="tools__button section-button" type="button">
-            <svg
-              class="section-button__icon"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_2_66)">
-                <path
-                  d="M16 5.51392C21.7915 5.51392 26.4861 10.2085 26.4861 16C26.4861 21.7915 21.7915 26.4861 16 26.4861C10.2085 26.4861 5.51389 21.7915 5.51389 16C5.51389 10.2085 10.2085 5.51392 16 5.51392Z"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.4223 11.8055L24.4413 22.2287"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.5777 11.8055H25.6158"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.1554 16L17.1744 5.57678"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.5777 20.1944L7.55869 9.77124"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.4223 20.1945H6.38423"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20.8446 16L14.8256 26.4232"
-                  stroke="black"
-                  stroke-width="12.5833"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_2_66">
-                  <rect width="32" height="32" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-
-            Get in touch
-          </button>
         </div>
       </section>
     </main>
@@ -803,8 +844,8 @@
 
           <div class="footer__info">
             <div class="footer__additional-photos">
-              <h3 class="footer__title">Business areas</h3>
-              <ul class="footer__list">
+              <h3 class="footer__title accordion">Business areas</h3>
+              <ul class="footer__list panel">
                 <li class="footer__item"><a href="">Product Photography</a></li>
                 <li class="footer__item"><a href="">Architecture Photography</a></li>
                 <li class="footer__item"><a href="">Drone Photography</a></li>
@@ -813,8 +854,8 @@
             </div>
 
             <div class="footer__additional-info">
-              <h3 class="footer__title">Pages</h3>
-              <ul class="footer__list">
+              <h3 class="footer__title accordion">Pages</h3>
+              <ul class="footer__list panel">
                 <li class="footer__item"><a href="">Gear cage</a></li>
                 <li class="footer__item"><a href="">Featured images</a></li>
                 <li class="footer__item"><a href="">Contact</a></li>
@@ -831,10 +872,10 @@
             <h3 class="subscription__title">Subscribe to our newsletter</h3>
             <p class="subscription__text">Read about all the things we do.</p>
           </div>
-          <div class="subscription__input">
+          <form class="subscription__input">
             <input class="footer__input" type="email" name="mail" id="mail" />
             <button class="footer__button" type="submit"></button>
-          </div>
+          </form>
         </section>
 
         <section class="footer__social">
@@ -863,6 +904,7 @@
         </section>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="./js/menu.js"></script>
   </body>
