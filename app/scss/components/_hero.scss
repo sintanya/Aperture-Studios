@@ -27,8 +27,6 @@
     }
     @media screen and (max-width: $width-tablet) {
       height: 550px;
-      object-fit: cover;
-      object-position: top center;
     }
     @media screen and (max-width: $width-mobile) {
       height: 500px;

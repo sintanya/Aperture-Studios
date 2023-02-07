@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 600px) {
       flex-direction: column;
     }
   }
@@ -58,7 +58,7 @@
     @media screen and (max-width: $width-tablet) {
       margin-bottom: 14px;
     }
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 600px) {
       width: 100%;
     }
 
@@ -68,7 +68,7 @@
       @media screen and (max-width: $width-tablet) {
         margin-left: 14px;
       }
-      @media screen and (max-width: 680px) {
+      @media screen and (max-width: 600px) {
         margin-left: 0;
       }
     }
@@ -80,38 +80,39 @@
     }
 
     &:last-child {
-      @media screen and (max-width: 680px) {
+      @media screen and (max-width: 600px) {
         margin-bottom: 0;
       }
     }
   }
 
+  &__image {
+    @media screen and (max-width: 1000px) {
+      filter: brightness(0.8);
+    }
+  }
+
+  &__wrap {
+    max-width: 516px;
+
+    @media screen and (max-width: $width-mobile) {
+      max-width: 500px;
+    }
+  }
+
   &__content {
     position: absolute;
-    bottom: 31px;
-    left: 30px;
+    bottom: 10px;
+    left: 10px;
 
-    max-width: 516px;
-    width: 100%;
+    padding: 20px;
 
     z-index: 2;
-
-    @media screen and(max-width: 1200px) {
-      max-width: 440px;
-    }
-    @media screen and(max-width: 1000px) {
-      max-width: 300px;
-    }
     @media screen and (max-width: $width-tablet) {
-      max-width: 260px;
-    }
-    @media screen and (max-width: 680px) {
-      max-width: 400px;
+      padding: 10px;
     }
     @media screen and (max-width: $width-mobile) {
-      left: 20px;
-      bottom: 21px;
-      max-width: 260px;
+      padding: 5px;
     }
   }
 
@@ -119,12 +120,6 @@
     @extend %headline;
     margin-bottom: 11px;
 
-    @media screen and(max-width: 1000px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: 680px) {
-      font-size: 14px;
-    }
     @media screen and (max-width: $width-mobile) {
       margin-bottom: 8px;
     }
@@ -134,16 +129,8 @@
     @extend %text;
     margin-bottom: 15px;
 
-    @media screen and(max-width: 1200px) {
-      font-size: 12px;
-    }
-    @media screen and(min-width: 680px) and (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       min-height: 95px;
-    }
-    @media screen and (min-width: 480px) and (max-width: 680px) {
-      min-height: 60px;
-
-      font-size: 14px;
     }
   }
 }
