@@ -18,13 +18,19 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a class="header__logo" href=""
+        <a class="header__logo" href="" aria-label="logo"
           ><svg width="128" height="31">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <button type="button" class="button-menu" aria-expanded="false" data-menu-button>
-          <svg class="button-menu__burger" width="24" height="24" aria-label="Mobile menu switch">
+        <button
+          class="button-menu"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+          aria-label="Mobile menu switch"
+        >
+          <svg class="button-menu__burger" width="24" height="24">
             <use class="button-menu__icon" href="./images/icons.svg#icon-ic-menu"></use>
             <use class="button-menu__cross" href="./images/icons.svg#icon-ic-cross"></use>
           </svg>
@@ -39,7 +45,9 @@
             </ul>
           </nav>
 
-          <button type="button" class="header__button">Get template</button>
+          <button class="header__button" type="button" aria-labelledby="Get template">
+            Get template
+          </button>
         </div>
       </div>
     </header>
@@ -51,7 +59,7 @@
             class="hero__image"
             src="./images/heroimg.jpg"
             alt="landscape photography"
-            width="100%"
+            width="1440"
           />
         </div>
         <div class="hero__container">
@@ -110,7 +118,7 @@
                 class="works__image"
                 src="./images/product.jpg"
                 alt="product photography"
-                width="100%"
+                width="576"
               />
 
               <div class="works__content">
@@ -120,7 +128,7 @@
                     Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur
                     auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
                   </p>
-                  <a class="works__button section-button" href="">
+                  <a class="works__button section-button" href="" aria-labelledby="read more">
                     <svg
                       class="section-button__icon"
                       width="32"
@@ -181,7 +189,7 @@
                         />
                       </g>
                       <defs>
-                        <clipPath id="clip0_2_66">
+                        <clipPath>
                           <rect width="32" height="32" fill="white" />
                         </clipPath>
                       </defs>
@@ -198,7 +206,7 @@
                 class="works__image"
                 src="./images/architecture.jpg"
                 alt="architecture photography"
-                width="100%"
+                width="576"
               />
 
               <div class="works__content">
@@ -209,7 +217,7 @@
                     egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce
                     tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.
                   </p>
-                  <a class="works__button section-button" href="">
+                  <a class="works__button section-button" href="" aria-labelledby="read more">
                     <svg
                       class="section-button__icon"
                       width="32"
@@ -270,7 +278,7 @@
                         />
                       </g>
                       <defs>
-                        <clipPath id="clip0_2_66">
+                        <clipPath>
                           <rect width="32" height="32" fill="white" />
                         </clipPath>
                       </defs>
@@ -287,7 +295,7 @@
                 class="works__image"
                 src="./images/drone.jpg"
                 alt="drone photography"
-                width="100%"
+                width="576"
               />
 
               <div class="works__content">
@@ -299,7 +307,7 @@
                     non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
                     cursus quam.
                   </p>
-                  <a class="works__button section-button" href="">
+                  <a class="works__button section-button" href="" aria-labelledby="read more">
                     <svg
                       class="section-button__icon"
                       width="32"
@@ -360,7 +368,7 @@
                         />
                       </g>
                       <defs>
-                        <clipPath id="clip0_2_66">
+                        <clipPath>
                           <rect width="32" height="32" fill="white" />
                         </clipPath>
                       </defs>
@@ -377,7 +385,7 @@
                 class="works__image"
                 src="./images/wildlife.jpg"
                 alt="wildlife photography"
-                width="100%"
+                width="576"
               />
               <div class="works__content">
                 <div class="works__wrap">
@@ -388,7 +396,7 @@
                     neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit
                     amet urna turpis.
                   </p>
-                  <a class="works__button section-button" href="">
+                  <a class="works__button section-button" href="" aria-labelledby="read more">
                     <svg
                       class="section-button__icon"
                       width="32"
@@ -449,7 +457,7 @@
                         />
                       </g>
                       <defs>
-                        <clipPath id="clip0_2_66">
+                        <clipPath>
                           <rect width="32" height="32" fill="white" />
                         </clipPath>
                       </defs>
@@ -470,7 +478,7 @@
             class="work-example__image"
             src="./images/sunset.jpg"
             alt="sunset at Mount Fuji"
-            width="100%"
+            width="1440"
           />
           <div class="work-example__content">
             <h3 class="work-example__subtitle">Sunset at Mount Fuji</h3>
@@ -520,7 +528,7 @@
                 these are the tools that we actually use everyday to capture the amazing things
                 around us.
               </p>
-              <a class="tools__button section-button" href="">
+              <a class="tools__button section-button" href="" aria-labelledby="Check it out">
                 <svg
                   class="section-button__icon"
                   width="32"
@@ -581,7 +589,7 @@
                     />
                   </g>
                   <defs>
-                    <clipPath id="clip0_2_66">
+                    <clipPath>
                       <rect width="32" height="32" fill="white" />
                     </clipPath>
                   </defs>
@@ -592,7 +600,7 @@
             </div>
           </div>
           <div class="tools__img-box">
-            <img class="tools__image" src="./images/tools.jpg" alt="" width="100%" />
+            <img class="tools__image" src="./images/tools.jpg" alt="" width="720" />
             <ul class="tools__list photo-settings">
               <li class="photo-settings__item">
                 <svg class="photo-settings__icon" width="16" height="16">
@@ -629,7 +637,7 @@
             class="work-example__image"
             src="./images/monstera.jpg"
             alt="monstera leafs"
-            width="100%"
+            width="1440"
           />
           <div class="work-example__content">
             <h3 class="work-example__subtitle">Monstera Leafs</h3>
@@ -674,33 +682,33 @@
 
           <div class="customers__wrapper">
             <div class="swiper customers__swiper">
-              <ul class="customers__list swiper-wrapper">
-                <li class="customers__item swiper-slide">
+              <div class="customers__list swiper-wrapper">
+                <div class="customers__item swiper-slide">
                   <svg class="customers__icon" width="128" height="30">
                     <use href="./images/icons.svg#icon-clientslogo1"></use>
                   </svg>
-                </li>
-                <li class="customers__item swiper-slide">
+                </div>
+                <div class="customers__item swiper-slide">
                   <svg class="customers__icon" width="128" height="78">
                     <use href="./images/icons.svg#icon-clientslogo2"></use>
                   </svg>
-                </li>
-                <li class="customers__item swiper-slide">
+                </div>
+                <div class="customers__item swiper-slide">
                   <svg class="customers__icon" width="128" height="20">
                     <use href="./images/icons.svg#icon-clientslogo3"></use>
                   </svg>
-                </li>
-                <li class="customers__item swiper-slide">
+                </div>
+                <div class="customers__item swiper-slide">
                   <svg class="customers__icon" width="128" height="36">
                     <use href="./images/icons.svg#icon-clientslogo4"></use>
                   </svg>
-                </li>
-                <li class="customers__item swiper-slide">
+                </div>
+                <div class="customers__item swiper-slide">
                   <svg class="customers__icon" width="128" height="32">
                     <use href="./images/icons.svg#icon-clientslogo5"></use>
                   </svg>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <div class="swiper-pagination customers__pagination"></div>
           </div>
@@ -713,7 +721,7 @@
             class="work-example__image"
             src="./images/star-fall.jpg"
             alt="star fall in the Himalayas"
-            width="100%"
+            width="1440"
           />
           <div class="work-example__content">
             <h3 class="work-example__subtitle">Star fall in the Himalayas</h3>
@@ -756,7 +764,7 @@
           <div class="communication__content">
             <h2 class="communication__title">Need help with photography or videography?</h2>
             <p class="communication__text">We're here for you!</p>
-            <button class="tools__button section-button" type="button">
+            <button class="tools__button section-button" type="button" aria-labelledby="contact us">
               <svg
                 class="section-button__icon"
                 width="32"
@@ -817,7 +825,7 @@
                   />
                 </g>
                 <defs>
-                  <clipPath id="clip0_2_66">
+                  <clipPath>
                     <rect width="32" height="32" fill="white" />
                   </clipPath>
                 </defs>
@@ -834,7 +842,7 @@
       <div class="footer__container container">
         <section class="footer__information">
           <div class="footer__logo-box">
-            <a class="footer__logo" href=""
+            <a class="footer__logo" href="" aria-label="logo"
               ><svg width="128" height="31">
                 <use href="./images/icons.svg#icon-logo"></use>
               </svg>
@@ -869,12 +877,22 @@
 
         <section class="footer__subscription">
           <div class="subscription">
-            <h3 class="subscription__title">Subscribe to our newsletter</h3>
+            <b class="subscription__title">Subscribe to our newsletter</b>
             <p class="subscription__text">Read about all the things we do.</p>
           </div>
           <form class="subscription__input">
-            <input class="footer__input" type="email" name="mail" id="mail" />
-            <button class="footer__button" type="submit"></button>
+            <input
+              class="footer__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder=" "
+              autocomplete="off"
+              aria-label="email input"
+            />
+            <button class="footer__button" type="submit" aria-labelledby="submit" name="submit">
+              submit
+            </button>
           </form>
         </section>
 
@@ -883,19 +901,19 @@
 
           <ul class="footer__networks networks">
             <li class="networks__item">
-              <a class="networks__link" href=""
+              <a class="networks__link" href="" aria-label="twitter"
                 ><svg class="networks__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="networks__item">
-              <a class="networks__link" href=""
+              <a class="networks__link" href="" aria-label="instagram"
                 ><svg class="networks__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="networks__item">
-              <a class="networks__link" href=""
+              <a class="networks__link" href="" aria-label="facebook"
                 ><svg class="networks__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-fb"></use></svg
               ></a>
